@@ -8,20 +8,79 @@
 
     <Button
         android:id="@+id/getWeatherButton"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Get Weather"
         />
 
-    <ScrollView
-        android:id="@+id/displayScrollView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/getWeatherButton">
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="TEXT HERE"/>
-    </ScrollView>
+    <TextView
+        android:id="@+id/latituteTextView"
+        android:text="Latitude"
+        android:layout_below="@+id/getWeatherButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/longitudeTextView"
+        android:text="longitude"
+        android:layout_below="@id/latituteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/countryTextView"
+        android:text="country"
+        android:layout_below="@id/longitudeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/localityTextView"
+        android:text="locality"
+        android:layout_below="@id/countryTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/addressLineTextView"
+        android:text="address"
+        android:layout_below="@id/localityTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addressLineTextView"
+        android:text="TEXT HERE"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dateTextView"
+        android:layout_below="@id/textView"
+        android:text="Date"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/weatherTagTextView"
+        android:layout_below="@id/dateTextView"
+        android:text="Weather Today"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tempTextView"
+        android:layout_below="@id/weatherTagTextView"
+        android:text="Temperature"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/weatherIcon"/>
+
+
+
+
+
 </RelativeLayout>
